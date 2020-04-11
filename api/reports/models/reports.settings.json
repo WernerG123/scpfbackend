@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "reports",
+  "info": {
+    "name": "Reports"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "controller": {
+      "type": "string"
+    },
+    "incidents": {
+      "collection": "incidents",
+      "via": "report"
+    },
+    "date": {
+      "type": "string"
+    },
+    "shiftto": {
+      "type": "string"
+    },
+    "shiftfrom": {
+      "type": "string"
+    }
+  }
+}

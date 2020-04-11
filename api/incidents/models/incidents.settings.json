@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "incidents",
+  "info": {
+    "name": "Incidents"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "reporter": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "report": {
+      "via": "incidents",
+      "model": "reports"
+    }
+  }
+}

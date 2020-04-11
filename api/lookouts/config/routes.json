@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lookouts",
+      "handler": "lookouts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lookouts/count",
+      "handler": "lookouts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lookouts/:id",
+      "handler": "lookouts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lookouts",
+      "handler": "lookouts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lookouts/:id",
+      "handler": "lookouts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lookouts/:id",
+      "handler": "lookouts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

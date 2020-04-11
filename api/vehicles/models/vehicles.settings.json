@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "vehicles",
+  "info": {
+    "name": "vehicles"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "colour": {
+      "type": "string"
+    },
+    "characteristics": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "lastseen": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "reg": {
+      "type": "string"
+    }
+  }
+}
